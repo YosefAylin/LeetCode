@@ -4,10 +4,9 @@ class Solution {
         int vowelCount = 0;
         for (int i = 0; i < s.length(); i++) {
             if (vowels.contains(s.charAt(i))) {
-                vowelCount++;
+                return true;
             }
         }
-        return vowelCount > 0;
+        return false;
     }
-
 }
